@@ -78,7 +78,7 @@ html, body{
   cursor: pointer;
   border: 3px double var(--true-red);
   outline: none;
-  font-family: 'GuFengSongTi';
+  font-family: '方正姚体';
   font-size: 3vh;
   background-color: transparent;
   transition: all .3s;
