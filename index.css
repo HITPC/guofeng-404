@@ -4,10 +4,10 @@
   --milk-white: #f8f7f0;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'GuFengSongTi';
   src: url("./font/huaguangguyunsong.ttf");
-}
+} */
 
 @keyframes move-up-down {
   0%, 50%, 100%{
