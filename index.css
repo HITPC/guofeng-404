@@ -1,0 +1,95 @@
+:root{
+  --font-color-dark: rgb(66, 65, 66);
+  --true-red: #d23918;
+  --milk-white: #f8f7f0;
+}
+
+@font-face {
+  font-family: 'GuFengSongTi';
+  src: url("./font/huaguangguyunsong.ttf");
+}
+
+@keyframes move-up-down {
+  0%, 50%, 100%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(-3px);
+  }
+  75%{
+    transform: translateY(3px);
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.notfound-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--milk-white);
+}
+
+.notfound-container span{
+  position: absolute;
+  display: inline-block;
+  width: 3vw;
+  font-size: 3vw;
+  color: var(--font-color-dark);
+  font-weight: 700;
+  font-family: 'GuFengSongTi';
+  user-select: none;
+}
+
+.notfound-container span:nth-child(1){
+  left: 35%;
+  top: 5%;
+  animation: move-up-down 6s linear 0s infinite;
+}
+
+.notfound-container span:nth-child(2){
+  left: 45%;
+  top: 15%;
+  animation: move-up-down 6s linear .5s infinite;
+}
+
+.notfound-container span:nth-child(3){
+  left: 55%;
+  top: 10%;
+  animation: move-up-down 6s linear 1s infinite;
+}
+
+.notfound-container button{
+  position: absolute;
+  left: 65%;
+  top: 80%;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px double var(--true-red);
+  outline: none;
+  font-family: 'GuFengSongTi';
+  font-size: 3vh;
+  background-color: transparent;
+  transition: all .3s;
+}
+
+.notfound-btn-p{
+  display: inline-block;
+  width: 3vh;
+  color: var(--true-red);
+}
+
+.notfound-container button:hover{
+  box-shadow: 0px 0px 5px 2px var(--true-red);
+}
